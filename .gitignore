@@ -1,0 +1,6 @@
+.idea/
+node_modules/
+bin/
+export/
+package-lock.json
+.vercel
