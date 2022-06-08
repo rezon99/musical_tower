@@ -8,4 +8,4 @@ After going through all the floors and climbing onto the roof, the player enjoys
 
 Depending on which route the player chooses, the final mix may sound different.
 
-Enjoy your mix
+*Enjoy your mix
