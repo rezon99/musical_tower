@@ -1,3 +1,4 @@
+import {scene} from "./scene"
 const _scene = new Entity('_scene')
 engine.addEntity(_scene)
 const transform = new Transform({
