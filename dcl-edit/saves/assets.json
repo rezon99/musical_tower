@@ -1,0 +1,34 @@
+{
+    "gltfAssets": [
+        {
+            "name": "City Tile",
+            "id": "8cf38d3a-40c7-4a5f-8401-1c93cf834e99",
+            "gltfPath": "models/CityTile.glb"
+        },
+        {
+            "name": "HOUSE FINAL 2",
+            "id": "06114d09-4efd-4f21-8352-4596136a99a6",
+            "gltfPath": "models/HOUSE_FINAL_2.glb"
+        },
+        {
+            "name": "platform blue",
+            "id": "8f7c7d90-d31d-4cf2-9f07-b38a580e517f",
+            "gltfPath": "models/platform_blue.glb"
+        },
+        {
+            "name": "platform FINAL 1 filolet",
+            "id": "3b6eb5d6-51ae-4e6d-9f20-a6610eee8603",
+            "gltfPath": "models/platform_FINAL_1_filolet.glb"
+        },
+        {
+            "name": "platform red",
+            "id": "d90ddbf2-989e-400a-922c-2fe7bc88d328",
+            "gltfPath": "models/platform_red.glb"
+        },
+        {
+            "name": "platform yellow",
+            "id": "88318415-067b-409d-9a10-34d2c7ffa194",
+            "gltfPath": "models/platform_yellow.glb"
+        }
+    ]
+}
