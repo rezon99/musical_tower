@@ -85,7 +85,7 @@ export function createDispenser(
     const captchaUUIDQuery = await signedFetch(`https://${serverURL}/captcha`, {
       method: 'POST'
     })
-    const json = JSON.parse(captchaUUIDQuery.text)
+    const json = JSON.parse(captchaUUIDQuery.text as string)
     return json.data.uuid
   }
 
@@ -125,7 +125,7 @@ export function createDispenser(
         alreadyAttempted = false
         return
       }
-      const response = await claimCall(captchaResult, userData, realm)
+      const response = await claimCall(captchaResult, userData, realm as Realm)
       log(response)
       log(response.status)
       const json = await response.json()
