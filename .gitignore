@@ -5,3 +5,5 @@ npm-debug.log
 /*.env
 bin
 package-lock.json
+index.js
+index.js.lib

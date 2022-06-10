@@ -10,7 +10,7 @@
     "name": "author-name",
     "email": ""
   },
-  "main": "bin/game.js",
+  "main": "index.js",
   "tags": [],
   "scene": {
     "parcels": [
