@@ -29,6 +29,16 @@
             "name": "tower",
             "id": "3f0621d0-111d-4983-9876-e67e93981b58",
             "gltfPath": "models/tower/tower.glb"
+        },
+        {
+            "name": "POAP button",
+            "id": "6ed2288d-32eb-4f69-bffd-5c402392c486",
+            "gltfPath": "models/poap/POAP_button.glb"
+        },
+        {
+            "name": "POAP dispenser",
+            "id": "26ff2990-2879-430f-b7d0-952f1250a113",
+            "gltfPath": "models/poap/POAP_dispenser.glb"
         }
     ]
 }
