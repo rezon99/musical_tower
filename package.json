@@ -21,10 +21,12 @@
   "dependencies": {
     "@dcl/ecs-scene-utils": "latest",
     "@dcl/ui-scene-utils": "latest",
+    "@dcl/npc-scene-utils": "latest",
     "decentraland": "^3.10.4"
   },
-  "bundleDependencies": [
+  "bundledDependencies": [
     "@dcl/ecs-scene-utils",
-    "@dcl/ui-scene-utils"
+    "@dcl/ui-scene-utils",
+    "@dcl/npc-scene-utils"
   ]
 }

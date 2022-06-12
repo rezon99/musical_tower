@@ -66,19 +66,14 @@
             "gltfPath": "models/treble_clef/treble_clef.glb"
         },
         {
-            "name": "npc",
-            "id": "6cafbd7b-a4b1-4ae3-b1ee-c60552eb7a0d",
-            "gltfPath": "models/robots/npc.glb"
+            "name": "POAP button",
+            "id": "2c489bf9-4500-4e4a-9c89-d2f8e12ee4f8",
+            "gltfPath": "models/poap_button/POAP_button.glb"
         },
         {
             "name": "POAP dispenser",
             "id": "ed041576-38e9-40a2-8b46-bcf27a87fd12",
             "gltfPath": "models/poap_dispenser/POAP_dispenser.glb"
-        },
-        {
-            "name": "POAP button",
-            "id": "2c489bf9-4500-4e4a-9c89-d2f8e12ee4f8",
-            "gltfPath": "models/poap_button/POAP_button.glb"
         }
     ]
 }

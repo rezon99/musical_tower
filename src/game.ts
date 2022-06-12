@@ -4,13 +4,58 @@ import {Sequencer} from "./entities/sequencer";
 import {Dispenser} from "./entities/dispenser";
 import { triggerEmote, PredefinedEmote } from "@decentraland/RestrictedActions"
 import { movePlayerTo } from '@decentraland/RestrictedActions'
+import {NPC, NPCDelay} from "@dcl/npc-scene-utils";
+import { AliceDialog } from './libs/npc/dialogData'
+import resources from "./resources";
 
-const sequencer = new Sequencer()
+const npcPosition = new Vector3(22, 1.6, 5)
+const npcRotation = Quaternion.Euler(0, 270, 0)
+
+export const npc = new NPC(
+    {
+        position: npcPosition,
+        rotation: npcRotation
+    },
+    resources.models.npc,
+    () => {
+        // animations
+        npc.playAnimation('Hello', true, 2)
+
+        const dummyent = new Entity()
+        dummyent.addComponent(
+            new NPCDelay(2, () => {
+                npc.playAnimation('Talk')
+            })
+        )
+        engine.addEntity(dummyent)
+
+        // sound
+        npc.addComponentOrReplace(new AudioSource(resources.sounds.npc))
+        npc.getComponent(AudioSource).playOnce()
+
+        // dialog UI
+        npc.talk(AliceDialog)
+    },
+    {
+        portrait: {
+            path: resources.images.npc,
+            height: 256,
+            width: 256,
+            section: {
+                sourceHeight: 512,
+                sourceWidth: 512
+            }
+        },
+        onWalkAway: () => {
+            npc.playAnimation('Goodbye', true, 2)
+        }
+    }
+)
+
+
+
+export const sequencer = new Sequencer()
 engine.addEntity(sequencer)
-/*
-const dispenser = new Dispenser()
-engine.addEntity(dispenser)
-*/
 
 const clef = scene.trebleClef.entity
 clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
@@ -21,16 +66,12 @@ clef.addComponent(
         ),
         {
             onCameraEnter: () => {
-                log('onCameraEnter')
-                movePlayerTo(
-                    scene.platformBlue1.entity.getComponent(Transform).position
-                ).catch((error) => log(error))
+                new Dispenser(new Vector3(npcPosition.x, 0, npcPosition.z + 2.5), npcRotation)
+                movePlayerTo(new Vector3(npcPosition.x - 4, npcPosition.y, npcPosition.z)).catch((error) => log(error))
             }
         }
     )
 )
-
-
 
 const platforms = [
     scene.platformBlue1.entity,
@@ -78,7 +119,3 @@ for (let i = 0; i < platforms.length; i++) {
 function getRandom (min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
-/*
-export default {
-    sequencer
-}*/

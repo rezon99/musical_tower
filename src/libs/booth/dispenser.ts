@@ -33,7 +33,7 @@ export function createDispenser(
   engine.addEntity(entity)
   eventUUID = eventUUID
 
-  entity.addComponent(new GLTFShape('models/poap/POAP_dispenser.glb'))
+  entity.addComponent(new GLTFShape('models/poap_dispenser/POAP_dispenser.glb'))
   entity.addComponent(new Transform(transform))
 
   const idleAnim = new AnimationState('Idle_POAP', { looping: true })
@@ -45,7 +45,7 @@ export function createDispenser(
   idleAnim.play()
 
   const button = new Entity()
-  button.addComponent(new GLTFShape('models/poap/POAP_button.glb'))
+  button.addComponent(new GLTFShape('models/poap_dispenser/POAP_button.glb'))
   button.addComponent(new Animator())
   button
     .getComponent(Animator)
