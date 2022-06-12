@@ -53,6 +53,13 @@ export const npc = new NPC(
 )
 
 
+const box = new Entity()
+box.addComponent(new GLTFShape('models/box.glb'))
+box.addComponent(new Transform({ position: new Vector3(16, -2.5, 16) }))
+engine.addEntity(box)
+
+const tower = scene.tower
+tower.entity.getComponent(GLTFShape).visible = false
 
 export const sequencer = new Sequencer()
 engine.addEntity(sequencer)
