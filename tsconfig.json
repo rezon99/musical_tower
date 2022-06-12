@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outFile": "index.js",
+    "outFile": "./bin/game.js",
     "allowJs": true,
     "strict": true,
     "paths": {

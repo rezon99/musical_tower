@@ -1,11 +1,33 @@
-import {createDispenser} from "./libs/booth/dispenser";
+import { scene } from "./scene";
+import * as utils from '@dcl/ecs-scene-utils'
+import {Sequencer} from "./sequencer";
+import {Dispenser} from "./dispenser";
 
-const _scene = new Entity('_scene')
+const sequencer = new Sequencer()
+engine.addEntity(sequencer)
 
-createDispenser(
-    {
-        position: new Vector3(18.5,35.5, 12),
-        rotation: Quaternion.Euler(0, 0, 0)
-    },
-    'acd27e4b-24bd-4040-b715-c0e11e863fb0'
-)
+const dispenser = new Dispenser()
+engine.addEntity(dispenser)
+
+const platforms = [
+    scene.platformBlue1.entity,
+    scene.platformBlue2.entity,
+    scene.platformBlue3.entity,
+    scene.platformBlue4.entity,
+    scene.platformBlue5.entity
+]
+
+for (let i = 0; i < platforms.length; i++) {
+    platforms[i].addComponent(
+        new utils.TriggerComponent(
+            new utils.TriggerBoxShape(
+                new Vector3(5, 5, 5)
+            ),
+            {
+                onCameraEnter: () => {
+                    sequencer.playSound(i + 1)
+                }
+            }
+        )
+    )
+}

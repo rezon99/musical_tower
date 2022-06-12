@@ -201,10 +201,10 @@
         },
         {
             "hierarchyOrder": 21.0,
-            "name": "platform blue",
+            "name": "platform blue 2",
             "uniqueNumber": 33,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
@@ -219,10 +219,10 @@
         },
         {
             "hierarchyOrder": 20.0,
-            "name": "platform blue",
+            "name": "platform blue 1",
             "uniqueNumber": 34,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
@@ -237,10 +237,10 @@
         },
         {
             "hierarchyOrder": 18.0,
-            "name": "platform blue",
+            "name": "platform blue 3",
             "uniqueNumber": 35,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
@@ -255,10 +255,10 @@
         },
         {
             "hierarchyOrder": 19.0,
-            "name": "platform blue",
+            "name": "platform blue 4",
             "uniqueNumber": 36,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
@@ -273,10 +273,10 @@
         },
         {
             "hierarchyOrder": 16.0,
-            "name": "platform blue",
+            "name": "platform blue 5",
             "uniqueNumber": 37,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
@@ -420,7 +420,7 @@
             "name": "platform yellow",
             "uniqueNumber": 45,
             "parent": -1,
-            "exposed": false,
+            "exposed": true,
             "collapsedChildren": false,
             "components": [
                 {
