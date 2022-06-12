@@ -46,7 +46,7 @@ export class Sequencer extends Entity {
         this._sounds[key] = audioSource
     }
 
-    playSound(index: number) {
+    playSound (index: number) {
         this._queue.push(index)
 
         if (!this._playing) {
@@ -60,7 +60,14 @@ export class Sequencer extends Entity {
         }
     }
 
-    private _onTimeout() {
+    clear () {
+        this._queue.length = 0
+        for (const key in this._sounds) {
+            this._sounds[key].playing = false
+        }
+    }
+
+    private _onTimeout () {
         while (this._queue.length) {
             const index = this._queue.shift()
             if (index) this._sounds[index].playing = true
