@@ -1,5 +1,5 @@
 import * as utils from '@dcl/ecs-scene-utils'
-import resources from "./resources";
+import resources from "../resources";
 
 export class Sequencer extends Entity {
     private readonly _sounds: {[key: string]: AudioSource}

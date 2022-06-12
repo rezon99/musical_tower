@@ -1,0 +1,44 @@
+{
+    "gltfAssets": [
+        {
+            "name": "floor tile",
+            "id": "f068999a-0784-429c-81b9-d176c603b92f",
+            "gltfPath": "models/floor_tile/floor_tile.glb"
+        },
+        {
+            "name": "platform blue",
+            "id": "d6ec15fb-8d05-4be2-bedf-882b8362078e",
+            "gltfPath": "models/platform_blue/platform_blue.glb"
+        },
+        {
+            "name": "platform purple",
+            "id": "66e1bd14-e47d-4a10-93ef-14be6d0fc67f",
+            "gltfPath": "models/platform_purple/platform_purple.glb"
+        },
+        {
+            "name": "platform red",
+            "id": "15f5edac-9a6f-43d4-8ba9-e8215e504efd",
+            "gltfPath": "models/platform_red/platform_red.glb"
+        },
+        {
+            "name": "platform yellow",
+            "id": "6ccc9703-bce1-4fa7-9ccd-ce772879849a",
+            "gltfPath": "models/platform_yellow/platform_yellow.glb"
+        },
+        {
+            "name": "tower",
+            "id": "3f0621d0-111d-4983-9876-e67e93981b58",
+            "gltfPath": "models/tower/tower.glb"
+        },
+        {
+            "name": "POAP button",
+            "id": "6ed2288d-32eb-4f69-bffd-5c402392c486",
+            "gltfPath": "models/poap/POAP_button.glb"
+        },
+        {
+            "name": "POAP dispenser",
+            "id": "26ff2990-2879-430f-b7d0-952f1250a113",
+            "gltfPath": "models/poap/POAP_dispenser.glb"
+        }
+    ]
+}

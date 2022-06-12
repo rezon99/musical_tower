@@ -1,4 +1,4 @@
-import {createDispenser} from "./libs/booth/dispenser";
+import {createDispenser} from "../libs/booth/dispenser";
 
 export class Dispenser extends Entity {
     constructor() {
