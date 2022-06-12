@@ -1,12 +1,13 @@
 import { scene } from "./scene";
 import * as utils from '@dcl/ecs-scene-utils'
 import {Sequencer} from "./entities/sequencer";
-import {Dispenser} from "./entities/dispenser";
 import { triggerEmote, PredefinedEmote } from "@decentraland/RestrictedActions"
 import { movePlayerTo } from '@decentraland/RestrictedActions'
 import {NPC, NPCDelay} from "@dcl/npc-scene-utils";
 import { AliceDialog } from './libs/npc/dialogData'
 import resources from "./resources";
+import {createMovingPlatform} from "./movingPlatform";
+import {createDispenser} from "./libs/booth/dispenser";
 
 const npcPosition = new Vector3(22, 1.6, 5)
 const npcRotation = Quaternion.Euler(0, 270, 0)
@@ -37,6 +38,10 @@ export const npc = new NPC(
         npc.talk(AliceDialog)
     },
     {
+        onlyClickTrigger: true,
+        faceUser: true,
+        // hoverText: config.hovertext,
+        // reactDistance: config.reactDistance,
         portrait: {
             path: resources.images.npc,
             height: 256,
@@ -52,19 +57,16 @@ export const npc = new NPC(
     }
 )
 
-
-const box = new Entity()
-box.addComponent(new GLTFShape('models/box.glb'))
-box.addComponent(new Transform({ position: new Vector3(16, -2.5, 16) }))
-engine.addEntity(box)
-
-const tower = scene.tower
-tower.entity.getComponent(GLTFShape).visible = false
+createDispenser(
+    {
+        position: new Vector3(npcPosition.x, 0, npcPosition.z + 2.5),
+        rotation: npcRotation
+    },
+    'acd27e4b-24bd-4040-b715-c0e11e863fb0'
+)
 
 export const sequencer = new Sequencer()
 engine.addEntity(sequencer)
-
-let showDispenser = false
 
 const clef = scene.trebleClef.entity
 clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
@@ -75,17 +77,26 @@ clef.addComponent(
         ),
         {
             onCameraEnter: () => {
-                if (!showDispenser) {
-                    new Dispenser(new Vector3(npcPosition.x, 0, npcPosition.z + 2.5), npcRotation)
-                    showDispenser = true
-                }
-
                 sequencer.clear()
                 engine.removeEntity(sequencer)
                 movePlayerTo(new Vector3(npcPosition.x - 4, npcPosition.y, npcPosition.z)).catch((error) => log(error))
             }
         }
     )
+)
+
+createMovingPlatform(
+    scene.tower.entity,
+    new Vector3(scene.tower.transform.position.x, scene.tower.transform.position.y - 2.5, scene.tower.transform.position.z),
+    new Vector3(scene.tower.transform.position.x, scene.tower.transform.position.y - 1, scene.tower.transform.position.z),
+    6
+)
+
+createMovingPlatform(
+    scene.platformBlue1.entity,
+    scene.platformBlue1.transform.position,
+    new Vector3(scene.platformBlue1.transform.position.x + 5, scene.platformBlue1.transform.position.y, scene.platformBlue1.transform.position.z),
+    4
 )
 
 const platforms = [
