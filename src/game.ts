@@ -57,6 +57,8 @@ export const npc = new NPC(
 export const sequencer = new Sequencer()
 engine.addEntity(sequencer)
 
+let showDispenser = false
+
 const clef = scene.trebleClef.entity
 clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
 clef.addComponent(
@@ -66,7 +68,13 @@ clef.addComponent(
         ),
         {
             onCameraEnter: () => {
-                new Dispenser(new Vector3(npcPosition.x, 0, npcPosition.z + 2.5), npcRotation)
+                if (!showDispenser) {
+                    new Dispenser(new Vector3(npcPosition.x, 0, npcPosition.z + 2.5), npcRotation)
+                    showDispenser = true
+                }
+
+                sequencer.clear()
+                engine.removeEntity(sequencer)
                 movePlayerTo(new Vector3(npcPosition.x - 4, npcPosition.y, npcPosition.z)).catch((error) => log(error))
             }
         }
