@@ -2,14 +2,12 @@ import { Interval } from '@dcl/ecs-scene-utils'
 
 export class Sequencer extends Entity {
     private readonly _sounds: {[key: string]: AudioSource}
-    private readonly _queue: string[]
     private _playing: boolean
 
     constructor() {
         super()
 
         this._sounds = {}
-        this._queue = []
         this._playing = false
 
         engine.addEntity(this)
@@ -25,7 +23,7 @@ export class Sequencer extends Entity {
             const audioSource = new AudioSource(clip)
 
             shape.withCollisions = false
-            audioSource.loop = true
+            // audioSource.loop = true
 
             entity.addComponent(shape)
             entity.addComponent(transform)
@@ -35,7 +33,6 @@ export class Sequencer extends Entity {
             entity.setParent(Attachable.FIRST_PERSON_CAMERA)
 
             this._sounds[key] = audioSource
-            this._queue.push(key)
         }
 
         if (!this._playing) {
@@ -48,16 +45,14 @@ export class Sequencer extends Entity {
     }
 
     stopSounds () {
-        this._queue.length = 0
         this.addComponentOrReplace(
             new Interval(100, () => this._onStopSoundsTimeout())
         )
     }
 
     private _onPlaySoundTimeout () {
-        while (this._queue.length) {
-            const key = this._queue.shift()
-            if (key) this._sounds[key].playing = true
+        for (const key in this._sounds) {
+            this._sounds[key].playOnce()
         }
     }
 
@@ -69,7 +64,6 @@ export class Sequencer extends Entity {
         const sounds = Object.keys(this._sounds).map(k => this._sounds[k])
         if (sounds.every(s => s.volume === 0)) {
             this.removeComponent(Interval)
-            sounds.forEach(s => s.playing = false)
         }
     }
 }

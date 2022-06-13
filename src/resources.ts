@@ -30,6 +30,7 @@ export default {
 		npc: 'images/npc/npc.png'
 	},
 	poap: {
-		eventUUID: ''
+		eventUUID: '',
+		externalURL: 'https://forms.gle/6XvSaDBo46w6zJHZ8'
 	}
 }

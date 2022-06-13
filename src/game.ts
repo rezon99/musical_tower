@@ -58,7 +58,8 @@ createDispenser(
         position: capsule.transform.position,
         rotation: Quaternion.Euler(0, 270, 0)
     },
-    resources.poap.eventUUID
+    resources.poap.eventUUID,
+    resources.poap.externalURL
 )
 
 Platforms.createMovingPlatform(

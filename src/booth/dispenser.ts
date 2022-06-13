@@ -20,6 +20,7 @@ const timeDelay = 5 * 60 * 1000 // Delay before being able to claim a POAP in mi
 export function createDispenser(
   transform: TranformConstructorArgs,
   eventUUID: string,
+  externalURL?: string,
   poapServer?: string
 ) {
   const createdTime = new Date()
@@ -56,7 +57,11 @@ export function createDispenser(
       (_e) => {
         button.getComponent(Animator).getClip('Button_Action').play()
         //sceneMessageBus.emit('activatePoap', {})
-        void makeTransaction()
+        if (externalURL) {
+          openExternalURL(externalURL)
+        } else {
+          void makeTransaction()
+        }
       },
       { hoverText: 'Get Attendance Token' }
     )
