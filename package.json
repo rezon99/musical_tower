@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Decentraland scene",
   "scripts": {
-    "start": "CI=true dcl start -p ${PORT:=8000}",
+    "start": "CI=true dcl start -p ${PORT:=8000} --no-debug",
     "local": "dcl start",
     "edit": "dcl-edit",
     "build": "build-ecs",
