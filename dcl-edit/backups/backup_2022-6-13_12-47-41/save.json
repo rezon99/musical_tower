@@ -681,15 +681,15 @@
         },
         {
             "hierarchyOrder": 16.0,
-            "name": "note5",
+            "name": "note2",
             "uniqueNumber": 63,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":7.318999767303467,\"y\":32.319000244140628,\"z\":9.170000076293946},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":0.8799999952316284,\"y\":0.8799999952316284,\"z\":0.8799999952316284}}"
+                    "specifics": "{\"pos\":{\"x\":7.319000244140625,\"y\":32.319000244140628,\"z\":9.170194625854493},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":0.8799999952316284,\"y\":0.8799999952316284,\"z\":0.8799999952316284}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -702,12 +702,12 @@
             "name": "note3",
             "uniqueNumber": 67,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":3.0329999923706056,\"y\":33.75699996948242,\"z\":20.707000732421876},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
+                    "specifics": "{\"pos\":{\"x\":3.0334014892578127,\"y\":33.756919860839847,\"z\":20.706993103027345},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":0.9996800422668457,\"y\":0.9996800422668457,\"z\":0.9996800422668457}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -720,12 +720,12 @@
             "name": "note1",
             "uniqueNumber": 62,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":5.767000198364258,\"y\":30.959999084472658,\"z\":24.187000274658204},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
+                    "specifics": "{\"pos\":{\"x\":5.766680717468262,\"y\":30.96027946472168,\"z\":24.186513900756837},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":0.9996800422668457,\"y\":0.9996800422668457,\"z\":0.9996800422668457}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -735,10 +735,10 @@
         },
         {
             "hierarchyOrder": 14.0,
-            "name": "note4",
+            "name": "note3",
             "uniqueNumber": 69,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
@@ -756,7 +756,7 @@
             "name": "note2",
             "uniqueNumber": 68,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {

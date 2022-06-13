@@ -13,6 +13,11 @@ import {Utils} from "./utils";
 const {
     capsule,
     trebleClef,
+    note1,
+    note2,
+    note3,
+    note4,
+    note5,
     platformBlue1,
     platformBlue2,
     platformBlue3,
@@ -30,6 +35,10 @@ const platforms = [
     { entity: platformBlue5.entity, clip: resources.audio.sequencer.s5 },
     { entity: platformBlue6.entity, clip: resources.audio.sequencer.s6 },
     { entity: platformBlue7.entity, clip: resources.audio.sequencer.s7 },
+]
+
+const notes = [
+    note1, note2, note3, note4, note5
 ]
 
 const routines: PredefinedEmote[] = [
@@ -67,6 +76,8 @@ Platforms.createMovingPlatform(
     scene.platformBlue1.transform.position.add(new Vector3(5)),
     4
 )
+
+notes.forEach(note => note.entity.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0))))
 
 platforms.forEach(platform => {
     const entity = platform.entity
