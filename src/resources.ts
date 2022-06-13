@@ -23,9 +23,6 @@ export default {
             s7: new AudioClip('sounds/7.mp3')
         }
     },
-	sounds: {
-
-	},
 	images: {
 		npc: 'images/npc/npc.png'
 	},

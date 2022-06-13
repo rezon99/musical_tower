@@ -22,17 +22,20 @@ After going through all the floors and climbing onto the top, the player enjoys 
 
 Depending on which route the player chooses, the final mix may sound different.
 
-<p>
+<p align="center">
     <img src="screenshots/poap.gif" width="300"><br>
     <strong>Enjoy your mix and don't forget to grab the POAP</strong>
 </p>
 
 ## 👀 Overview
-**Game fast look**
-
-**Level builder using DCL Editor**
+<p align="center">
+    <img src="screenshots/preview.gif" width="600"><br>
+    <strong>Game fast look</strong>
+</p>
+<br />
 <p align="center">
     <img src="screenshots/dcl-edit.gif" width="600"><br>
+    <strong>Level builder using DCL Editor</strong>
 </p>
 
 ## ✔️ Try it out
@@ -83,17 +86,19 @@ Changes to a scene have immediate effect and can be tested right away and this i
 
 With the help of DCL edit, the scene can be rebuilt very quickly, which makes it easily customizable and reusable.
 
-**Troubleshooting...**
+**Wishes for future releases:**
 
-It would be great to add opportunity for multi-scenes development at DCL editor in future releases.
-
+- It would be great to add opportunity for multi-scenes development at DCL editor in future releases.
 This improvement could help to develop several scenes for the game at the moment.
 
-For UI would be useful a change history view tab. 
+- For UI would be useful a change history view tab. 
+
+- Turn on/off autosave of the editor scene.
 
 ## 📄 More
 
 - Scene playground on Heroku: https://music-tower-dcl.herokuapp.com/
+- Game walkthrough https://www.youtube.com/watch?v=KwyeCm8jc_o
 - About Game Jam: https://decentraland.org/blog/announcements/the-2022-decentraland-game-jam-is-here/
 - DCL-Edit: https://dcl-edit.com/
 - POAP event: https://poap.gallery/event/49435
