@@ -23,14 +23,17 @@ After going through all the floors and climbing onto the roof, the player enjoys
 Depending on which route the player chooses, the final mix may sound different.
 
 <p>
-<img src="screenshots/poap.gif" width="300"><br>
-<strong>Enjoy your mix and don't forget to grab the POAP</strong>
+    <img src="screenshots/poap.gif" width="300"><br>
+    <strong>Enjoy your mix and don't forget to grab the POAP</strong>
 </p>
 
 ## 👀 Overview
 **Game fast look**
 
 **Level builder using DCL Editor**
+<p align="center">
+    <img src="screenshots/dcl-edit.gif" width="600"><br>
+</p>
 
 ## ✔️ Try it out
 **Requirements**
