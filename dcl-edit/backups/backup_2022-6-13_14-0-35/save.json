@@ -1,8 +1,8 @@
 {
-    "entityNumberCounter": 81,
+    "entityNumberCounter": 79,
     "entities": [
         {
-            "hierarchyOrder": 46.0,
+            "hierarchyOrder": 44.0,
             "name": "platform purple",
             "uniqueNumber": 24,
             "parent": -1,
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "hierarchyOrder": 45.0,
+            "hierarchyOrder": 43.0,
             "name": "platform purple",
             "uniqueNumber": 25,
             "parent": -1,
@@ -34,7 +34,7 @@
             ]
         },
         {
-            "hierarchyOrder": 44.0,
+            "hierarchyOrder": 42.0,
             "name": "platform purple",
             "uniqueNumber": 26,
             "parent": -1,
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "hierarchyOrder": 43.0,
+            "hierarchyOrder": 41.0,
             "name": "platform purple",
             "uniqueNumber": 27,
             "parent": -1,
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "hierarchyOrder": 42.0,
+            "hierarchyOrder": 40.0,
             "name": "platform purple",
             "uniqueNumber": 29,
             "parent": -1,
@@ -80,7 +80,7 @@
             ]
         },
         {
-            "hierarchyOrder": 41.0,
+            "hierarchyOrder": 39.0,
             "name": "platform purple",
             "uniqueNumber": 31,
             "parent": -1,
@@ -98,7 +98,7 @@
             ]
         },
         {
-            "hierarchyOrder": 40.0,
+            "hierarchyOrder": 38.0,
             "name": "platform blue 3",
             "uniqueNumber": 33,
             "parent": -1,
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "hierarchyOrder": 39.0,
+            "hierarchyOrder": 37.0,
             "name": "platform blue 2",
             "uniqueNumber": 34,
             "parent": -1,
@@ -134,7 +134,7 @@
             ]
         },
         {
-            "hierarchyOrder": 37.0,
+            "hierarchyOrder": 35.0,
             "name": "platform blue 5",
             "uniqueNumber": 35,
             "parent": -1,
@@ -152,7 +152,7 @@
             ]
         },
         {
-            "hierarchyOrder": 38.0,
+            "hierarchyOrder": 36.0,
             "name": "platform blue 6",
             "uniqueNumber": 36,
             "parent": -1,
@@ -170,7 +170,7 @@
             ]
         },
         {
-            "hierarchyOrder": 35.0,
+            "hierarchyOrder": 33.0,
             "name": "platform blue 7",
             "uniqueNumber": 37,
             "parent": -1,
@@ -188,7 +188,7 @@
             ]
         },
         {
-            "hierarchyOrder": 36.0,
+            "hierarchyOrder": 34.0,
             "name": "platform purple",
             "uniqueNumber": 38,
             "parent": -1,
@@ -206,7 +206,7 @@
             ]
         },
         {
-            "hierarchyOrder": 32.0,
+            "hierarchyOrder": 30.0,
             "name": "platform purple",
             "uniqueNumber": 39,
             "parent": -1,
@@ -220,7 +220,7 @@
             ]
         },
         {
-            "hierarchyOrder": 33.0,
+            "hierarchyOrder": 31.0,
             "name": "platform purple",
             "uniqueNumber": 40,
             "parent": -1,
@@ -238,7 +238,7 @@
             ]
         },
         {
-            "hierarchyOrder": 34.0,
+            "hierarchyOrder": 32.0,
             "name": "platform purple",
             "uniqueNumber": 41,
             "parent": -1,
@@ -252,7 +252,7 @@
             ]
         },
         {
-            "hierarchyOrder": 31.0,
+            "hierarchyOrder": 29.0,
             "name": "platform purple",
             "uniqueNumber": 43,
             "parent": -1,
@@ -266,7 +266,7 @@
             ]
         },
         {
-            "hierarchyOrder": 30.0,
+            "hierarchyOrder": 28.0,
             "name": "platform purple",
             "uniqueNumber": 44,
             "parent": -1,
@@ -284,7 +284,7 @@
             ]
         },
         {
-            "hierarchyOrder": 25.0,
+            "hierarchyOrder": 23.0,
             "name": "platform purple",
             "uniqueNumber": 46,
             "parent": -1,
@@ -302,7 +302,7 @@
             ]
         },
         {
-            "hierarchyOrder": 29.0,
+            "hierarchyOrder": 27.0,
             "name": "platform purple",
             "uniqueNumber": 47,
             "parent": -1,
@@ -320,7 +320,7 @@
             ]
         },
         {
-            "hierarchyOrder": 28.0,
+            "hierarchyOrder": 26.0,
             "name": "platform purple",
             "uniqueNumber": 48,
             "parent": -1,
@@ -338,7 +338,7 @@
             ]
         },
         {
-            "hierarchyOrder": 27.0,
+            "hierarchyOrder": 25.0,
             "name": "platform purple",
             "uniqueNumber": 49,
             "parent": -1,
@@ -356,7 +356,7 @@
             ]
         },
         {
-            "hierarchyOrder": 24.0,
+            "hierarchyOrder": 22.0,
             "name": "platform purple",
             "uniqueNumber": 50,
             "parent": -1,
@@ -374,7 +374,7 @@
             ]
         },
         {
-            "hierarchyOrder": 26.0,
+            "hierarchyOrder": 24.0,
             "name": "platform purple",
             "uniqueNumber": 51,
             "parent": -1,
@@ -392,7 +392,7 @@
             ]
         },
         {
-            "hierarchyOrder": 23.0,
+            "hierarchyOrder": 21.0,
             "name": "platform purple",
             "uniqueNumber": 52,
             "parent": -1,
@@ -410,7 +410,7 @@
             ]
         },
         {
-            "hierarchyOrder": 20.0,
+            "hierarchyOrder": 18.0,
             "name": "platform purple",
             "uniqueNumber": 53,
             "parent": -1,
@@ -419,7 +419,7 @@
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":17.75,\"y\":34.75,\"z\":18.0},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
+                    "specifics": "{\"pos\":{\"x\":18.5,\"y\":34.0,\"z\":18.0},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -428,7 +428,7 @@
             ]
         },
         {
-            "hierarchyOrder": 22.0,
+            "hierarchyOrder": 20.0,
             "name": "platform green",
             "uniqueNumber": 57,
             "parent": -1,
@@ -437,7 +437,7 @@
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":7.0,\"y\":32.599998474121097,\"z\":11.0},\"rot\":{\"x\":0.0,\"y\":0.7071068286895752,\"z\":0.0,\"w\":-0.7071068286895752},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
+                    "specifics": "{\"pos\":{\"x\":12.5,\"y\":32.599998474121097,\"z\":17.75},\"rot\":{\"x\":0.0,\"y\":0.7071068286895752,\"z\":0.0,\"w\":-0.7071068286895752},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -446,7 +446,7 @@
             ]
         },
         {
-            "hierarchyOrder": 18.0,
+            "hierarchyOrder": 16.0,
             "name": "treble clef",
             "uniqueNumber": 58,
             "parent": -1,
@@ -455,7 +455,7 @@
             "components": [
                 {
                     "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":7.0,\"y\":33.5,\"z\":11.0},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
+                    "specifics": "{\"pos\":{\"x\":11.25,\"y\":33.5,\"z\":17.764999389648439},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
                 },
                 {
                     "name": "GLTFShape",
@@ -464,7 +464,7 @@
             ]
         },
         {
-            "hierarchyOrder": 21.0,
+            "hierarchyOrder": 19.0,
             "name": "platform yellow",
             "uniqueNumber": 60,
             "parent": -1,
@@ -482,7 +482,7 @@
             ]
         },
         {
-            "hierarchyOrder": 19.0,
+            "hierarchyOrder": 17.0,
             "name": "platform purple3",
             "uniqueNumber": 65,
             "parent": -1,
@@ -500,7 +500,7 @@
             ]
         },
         {
-            "hierarchyOrder": 17.0,
+            "hierarchyOrder": 15.0,
             "name": "tower",
             "uniqueNumber": 55,
             "parent": -1,
@@ -518,7 +518,7 @@
             ]
         },
         {
-            "hierarchyOrder": 6.0,
+            "hierarchyOrder": 4.0,
             "name": "platform purple2",
             "uniqueNumber": 70,
             "parent": -1,
@@ -536,7 +536,7 @@
             ]
         },
         {
-            "hierarchyOrder": 9.0,
+            "hierarchyOrder": 7.0,
             "name": "platform purple2",
             "uniqueNumber": 71,
             "parent": -1,
@@ -554,7 +554,7 @@
             ]
         },
         {
-            "hierarchyOrder": 8.0,
+            "hierarchyOrder": 6.0,
             "name": "platform purple3",
             "uniqueNumber": 72,
             "parent": -1,
@@ -572,7 +572,7 @@
             ]
         },
         {
-            "hierarchyOrder": 7.0,
+            "hierarchyOrder": 5.0,
             "name": "platform purple2",
             "uniqueNumber": 73,
             "parent": -1,
@@ -590,7 +590,7 @@
             ]
         },
         {
-            "hierarchyOrder": 4.0,
+            "hierarchyOrder": 2.0,
             "name": "platform purple2",
             "uniqueNumber": 74,
             "parent": -1,
@@ -608,7 +608,7 @@
             ]
         },
         {
-            "hierarchyOrder": 10.0,
+            "hierarchyOrder": 8.0,
             "name": "floor tile",
             "uniqueNumber": 19,
             "parent": -1,
@@ -626,7 +626,7 @@
             ]
         },
         {
-            "hierarchyOrder": 11.0,
+            "hierarchyOrder": 9.0,
             "name": "floor tile",
             "uniqueNumber": 22,
             "parent": -1,
@@ -644,7 +644,7 @@
             ]
         },
         {
-            "hierarchyOrder": 12.0,
+            "hierarchyOrder": 10.0,
             "name": "floor tile",
             "uniqueNumber": 20,
             "parent": -1,
@@ -662,7 +662,7 @@
             ]
         },
         {
-            "hierarchyOrder": 13.0,
+            "hierarchyOrder": 11.0,
             "name": "floor tile",
             "uniqueNumber": 23,
             "parent": -1,
@@ -680,7 +680,7 @@
             ]
         },
         {
-            "hierarchyOrder": 14.0,
+            "hierarchyOrder": 12.0,
             "name": "note3",
             "uniqueNumber": 67,
             "parent": -1,
@@ -698,7 +698,7 @@
             ]
         },
         {
-            "hierarchyOrder": 15.0,
+            "hierarchyOrder": 13.0,
             "name": "note1",
             "uniqueNumber": 62,
             "parent": -1,
@@ -716,7 +716,7 @@
             ]
         },
         {
-            "hierarchyOrder": 16.0,
+            "hierarchyOrder": 14.0,
             "name": "note2",
             "uniqueNumber": 68,
             "parent": -1,
@@ -734,7 +734,7 @@
             ]
         },
         {
-            "hierarchyOrder": 5.0,
+            "hierarchyOrder": 3.0,
             "name": "capsule",
             "uniqueNumber": 75,
             "parent": -1,
@@ -752,7 +752,7 @@
             ]
         },
         {
-            "hierarchyOrder": 3.0,
+            "hierarchyOrder": 1.0,
             "name": "platform blue 1",
             "uniqueNumber": 77,
             "parent": -1,
@@ -784,42 +784,6 @@
                 {
                     "name": "GLTFShape",
                     "specifics": "{\"assetID\":\"d6ec15fb-8d05-4be2-bedf-882b8362078e\"}"
-                }
-            ]
-        },
-        {
-            "hierarchyOrder": 2.0,
-            "name": "platform purple3",
-            "uniqueNumber": 79,
-            "parent": -1,
-            "exposed": false,
-            "collapsedChildren": false,
-            "components": [
-                {
-                    "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":12.75,\"y\":33.25,\"z\":23.25},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
-                },
-                {
-                    "name": "GLTFShape",
-                    "specifics": "{\"assetID\":\"a4b2127c-770f-4f3a-9404-4ca429ba0a56\"}"
-                }
-            ]
-        },
-        {
-            "hierarchyOrder": 1.0,
-            "name": "platform purple2",
-            "uniqueNumber": 80,
-            "parent": -1,
-            "exposed": false,
-            "collapsedChildren": false,
-            "components": [
-                {
-                    "name": "transform",
-                    "specifics": "{\"pos\":{\"x\":6.75,\"y\":32.0,\"z\":19.75},\"rot\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}"
-                },
-                {
-                    "name": "GLTFShape",
-                    "specifics": "{\"assetID\":\"e1ab70f5-213c-4e32-9344-ff5e334bd69e\"}"
                 }
             ]
         }

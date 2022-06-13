@@ -1,8 +1,8 @@
 import { scene } from "./scene";
-import * as utils from '@dcl/ecs-scene-utils'
+import * as utils from '@dcl/ecs-scene-utils';
 import {Sequencer} from "./sequencer";
-import { triggerEmote, PredefinedEmote } from "@decentraland/RestrictedActions"
-import { movePlayerTo } from '@decentraland/RestrictedActions'
+import { triggerEmote, PredefinedEmote } from "@decentraland/RestrictedActions";
+import { movePlayerTo } from '@decentraland/RestrictedActions';
 
 import {createDispenser} from "./booth/dispenser";
 import {Platforms} from "./platforms";
@@ -16,8 +16,6 @@ const {
     note1,
     note2,
     note3,
-    note4,
-    note5,
     platformBlue1,
     platformBlue2,
     platformBlue3,
@@ -38,7 +36,7 @@ const platforms = [
 ]
 
 const notes = [
-    note1, note2, note3, note4, note5
+    note1, note2, note3
 ]
 
 const routines: PredefinedEmote[] = [
@@ -74,6 +72,48 @@ Platforms.createMovingPlatform(
     scene.platformBlue1.entity,
     scene.platformBlue1.transform.position,
     scene.platformBlue1.transform.position.add(new Vector3(5)),
+    4
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue2.entity,
+    scene.platformBlue2.transform.position,
+    scene.platformBlue2.transform.position.add(new Vector3(-5)),
+    4
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue3.entity,
+    scene.platformBlue3.transform.position.add(new Vector3(0, 2)),
+    scene.platformBlue3.transform.position.add(new Vector3(0, -4)),
+    4
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue4.entity,
+    scene.platformBlue4.transform.position,
+    scene.platformBlue4.transform.position.add(new Vector3(0, 0, -5)),
+    4
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue5.entity,
+    scene.platformBlue5.transform.position,
+    scene.platformBlue5.transform.position.add(new Vector3(5)),
+    3
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue6.entity,
+    scene.platformBlue6.transform.position,
+    scene.platformBlue6.transform.position.add(new Vector3(4)),
+    5
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue7.entity,
+    scene.platformBlue7.transform.position.add(new Vector3(0, 2)),
+    scene.platformBlue7.transform.position.add(new Vector3(0, -4)),
     4
 )
 
