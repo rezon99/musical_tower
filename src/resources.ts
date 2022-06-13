@@ -28,6 +28,6 @@ export default {
 		npc: 'images/npc/npc.png'
 	},
 	poap: {
-		eventUUID: 'acd27e4b-24bd-4040-b715-c0e11e863fb0'
+		eventUUID: ''
 	}
 }
