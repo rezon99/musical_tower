@@ -102,7 +102,7 @@
             "name": "platform blue 3",
             "uniqueNumber": 33,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
@@ -120,7 +120,7 @@
             "name": "platform blue 2",
             "uniqueNumber": 34,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
@@ -138,7 +138,7 @@
             "name": "platform blue 5",
             "uniqueNumber": 35,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
@@ -153,7 +153,7 @@
         },
         {
             "hierarchyOrder": 38.0,
-            "name": "platform blue 6",
+            "name": "platform blue 4",
             "uniqueNumber": 36,
             "parent": -1,
             "exposed": true,
@@ -171,7 +171,7 @@
         },
         {
             "hierarchyOrder": 35.0,
-            "name": "platform blue 7",
+            "name": "platform blue 5",
             "uniqueNumber": 37,
             "parent": -1,
             "exposed": true,
@@ -792,7 +792,7 @@
             "name": "platform blue 1",
             "uniqueNumber": 77,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {
@@ -810,7 +810,7 @@
             "name": "platform blue 4",
             "uniqueNumber": 78,
             "parent": -1,
-            "exposed": true,
+            "exposed": false,
             "collapsedChildren": false,
             "components": [
                 {

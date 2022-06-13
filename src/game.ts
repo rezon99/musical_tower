@@ -18,6 +18,8 @@ const {
     platformBlue3,
     platformBlue4,
     platformBlue5,
+    platformBlue6,
+    platformBlue7,
 } = scene
 
 const platforms = [
@@ -26,6 +28,8 @@ const platforms = [
     { entity: platformBlue3.entity, clip: resources.audio.sequencer.s3 },
     { entity: platformBlue4.entity, clip: resources.audio.sequencer.s4 },
     { entity: platformBlue5.entity, clip: resources.audio.sequencer.s5 },
+    { entity: platformBlue6.entity, clip: resources.audio.sequencer.s6 },
+    { entity: platformBlue7.entity, clip: resources.audio.sequencer.s7 },
 ]
 
 const routines: PredefinedEmote[] = [

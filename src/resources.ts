@@ -19,6 +19,8 @@ export default {
             s3: new AudioClip('sounds/3.mp3'),
             s4: new AudioClip('sounds/4.mp3'),
             s5: new AudioClip('sounds/5.mp3'),
+            s6: new AudioClip('sounds/6.mp3'),
+            s7: new AudioClip('sounds/7.mp3')
         }
     },
 	sounds: {

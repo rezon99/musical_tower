@@ -84,11 +84,6 @@
             "name": "capsule",
             "id": "509b0584-b940-41e7-8911-d9ae0d24dc81",
             "gltfPath": "models/capsule/capsule.glb"
-        },
-        {
-            "name": "npc",
-            "id": "b2b5e231-aa9b-4280-bdac-03fbca238ce9",
-            "gltfPath": "models/npc/npc.glb"
         }
     ]
 }
