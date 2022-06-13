@@ -98,7 +98,7 @@ This improvement could help to develop several scenes for the game at the moment
 ## 📄 More
 
 - Scene playground on Heroku: https://music-tower-dcl.herokuapp.com/
-- Game walkthrough https://www.youtube.com/watch?v=KwyeCm8jc_o
+- Game walkthrough: https://www.youtube.com/watch?v=KwyeCm8jc_o
 - About Game Jam: https://decentraland.org/blog/announcements/the-2022-decentraland-game-jam-is-here/
 - DCL-Edit: https://dcl-edit.com/
 - POAP event: https://poap.gallery/event/49435
