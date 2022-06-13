@@ -87,6 +87,8 @@ It would be great to add opportunity for multi-scenes development at DCL editor 
 
 This improvement could help to develop several scenes for the game at the moment.
 
+For UI would be useful a change history view tab. 
+
 ## 📄 More
 
 - Scene playground on Heroku: https://music-tower-dcl.herokuapp.com/
