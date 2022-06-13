@@ -81,6 +81,8 @@ This solution helps to build and edit scene for Decentraland very fast.
 
 Changes to a scene have immediate effect and can be tested right away and this is awesome!
 
+With the help of DCL edit, the scene can be rebuilt very quickly, which makes it easily customizable and reusable.
+
 **Troubleshooting...**
 
 It would be great to add opportunity for multi-scenes development at DCL editor in future releases.
