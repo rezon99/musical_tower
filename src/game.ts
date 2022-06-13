@@ -1,110 +1,31 @@
 import { scene } from "./scene";
 import * as utils from '@dcl/ecs-scene-utils'
-import {Sequencer} from "./entities/sequencer";
+import {Sequencer} from "./sequencer";
 import { triggerEmote, PredefinedEmote } from "@decentraland/RestrictedActions"
 import { movePlayerTo } from '@decentraland/RestrictedActions'
-import {NPC, NPCDelay} from "@dcl/npc-scene-utils";
-import { AliceDialog } from './libs/npc/dialogData'
+
+import {createDispenser} from "./booth/dispenser";
+import {Platforms} from "./platforms";
 import resources from "./resources";
-import {createMovingPlatform} from "./movingPlatform";
-import {createDispenser} from "./libs/booth/dispenser";
+import {Npc} from "./npc/npc";
+import {Utils} from "./utils";
 
-const npcPosition = new Vector3(22, 1.6, 5)
-const npcRotation = Quaternion.Euler(0, 270, 0)
-
-export const npc = new NPC(
-    {
-        position: npcPosition,
-        rotation: npcRotation
-    },
-    resources.models.npc,
-    () => {
-        // animations
-        npc.playAnimation('Hello', true, 2)
-
-        const dummyent = new Entity()
-        dummyent.addComponent(
-            new NPCDelay(2, () => {
-                npc.playAnimation('Talk')
-            })
-        )
-        engine.addEntity(dummyent)
-
-        // sound
-        npc.addComponentOrReplace(new AudioSource(resources.sounds.npc))
-        npc.getComponent(AudioSource).playOnce()
-
-        // dialog UI
-        npc.talk(AliceDialog)
-    },
-    {
-        onlyClickTrigger: true,
-        faceUser: true,
-        // hoverText: config.hovertext,
-        // reactDistance: config.reactDistance,
-        portrait: {
-            path: resources.images.npc,
-            height: 256,
-            width: 256,
-            section: {
-                sourceHeight: 512,
-                sourceWidth: 512
-            }
-        },
-        onWalkAway: () => {
-            npc.playAnimation('Goodbye', true, 2)
-        }
-    }
-)
-
-createDispenser(
-    {
-        position: new Vector3(npcPosition.x, 0, npcPosition.z + 2.5),
-        rotation: npcRotation
-    },
-    'acd27e4b-24bd-4040-b715-c0e11e863fb0'
-)
-
-export const sequencer = new Sequencer()
-engine.addEntity(sequencer)
-
-const clef = scene.trebleClef.entity
-clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
-clef.addComponent(
-    new utils.TriggerComponent(
-        new utils.TriggerBoxShape(
-            new Vector3(2, 5, 2)
-        ),
-        {
-            onCameraEnter: () => {
-                sequencer.clear()
-                engine.removeEntity(sequencer)
-                movePlayerTo(new Vector3(npcPosition.x - 4, npcPosition.y, npcPosition.z)).catch((error) => log(error))
-            }
-        }
-    )
-)
-
-createMovingPlatform(
-    scene.tower.entity,
-    new Vector3(scene.tower.transform.position.x, scene.tower.transform.position.y - 2.5, scene.tower.transform.position.z),
-    new Vector3(scene.tower.transform.position.x, scene.tower.transform.position.y - 1, scene.tower.transform.position.z),
-    6
-)
-
-createMovingPlatform(
-    scene.platformBlue1.entity,
-    scene.platformBlue1.transform.position,
-    new Vector3(scene.platformBlue1.transform.position.x + 5, scene.platformBlue1.transform.position.y, scene.platformBlue1.transform.position.z),
-    4
-)
+const {
+    capsule,
+    trebleClef,
+    platformBlue1,
+    platformBlue2,
+    platformBlue3,
+    platformBlue4,
+    platformBlue5,
+} = scene
 
 const platforms = [
-    scene.platformBlue1.entity,
-    scene.platformBlue2.entity,
-    scene.platformBlue3.entity,
-    scene.platformBlue4.entity,
-    scene.platformBlue5.entity
+    { entity: platformBlue1.entity, clip: resources.audio.sequencer.s1 },
+    { entity: platformBlue2.entity, clip: resources.audio.sequencer.s2 },
+    { entity: platformBlue3.entity, clip: resources.audio.sequencer.s3 },
+    { entity: platformBlue4.entity, clip: resources.audio.sequencer.s4 },
+    { entity: platformBlue5.entity, clip: resources.audio.sequencer.s5 },
 ]
 
 const routines: PredefinedEmote[] = [
@@ -115,33 +36,74 @@ const routines: PredefinedEmote[] = [
     PredefinedEmote.DISCO
 ]
 
-const clip = new AudioClip('sounds/donk.mp3')
-for (let i = 0; i < platforms.length; i++) {
-    const platform = platforms[i]
-    const audioSource = new AudioSource(clip)
-    platform.addComponent(audioSource)
-    platform.addComponent(
+const npcPosition = capsule.transform.position.add(new Vector3(0, 1.6, -2.5))
+const playerPosition = npcPosition.add(new Vector3(-4))
+
+const npc = new Npc(npcPosition)
+const sequencer = new Sequencer()
+
+createDispenser(
+    {
+        position: capsule.transform.position,
+        rotation: Quaternion.Euler(0, 270, 0)
+    },
+    resources.poap.eventUUID
+)
+
+Platforms.createMovingPlatform(
+    scene.tower.entity,
+    scene.tower.transform.position.add(new Vector3(0, -2.5)),
+    scene.tower.transform.position.add(new Vector3(0, -1)),
+    6
+)
+
+Platforms.createMovingPlatform(
+    scene.platformBlue1.entity,
+    scene.platformBlue1.transform.position,
+    scene.platformBlue1.transform.position.add(new Vector3(5)),
+    4
+)
+
+platforms.forEach(platform => {
+    const entity = platform.entity
+    const audioSource = new AudioSource(resources.audio.donk)
+    entity.addComponent(audioSource)
+    entity.addComponent(
         new utils.TriggerComponent(
             new utils.TriggerBoxShape(
                 new Vector3(5, 5, 5)
             ),
             {
                 onCameraEnter: () => {
-                    platform.removeComponent(GLTFShape)
-                    platform.addComponent(new GLTFShape('models/platform_yellow/platform_yellow.glb'))
-                    sequencer.playSound(i + 1)
-                    platform.getComponent(AudioSource).playing = true
-                    platform.addComponent(
+                    entity.removeComponent(GLTFShape)
+                    entity.addComponent(new GLTFShape(resources.models.platform_yellow))
+                    entity.getComponent(AudioSource).playing = true
+                    entity.addComponent(
                         new utils.Delay(500, () => {
-                            triggerEmote({ predefined: routines[getRandom(0, routines.length - 1)] })
+                            triggerEmote({ predefined: routines[Utils.getRandom(0, routines.length - 1)] })
                         })
                     )
+                    sequencer.addClip(platform.clip)
                 }
             }
         )
     )
-}
+})
 
-function getRandom (min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
+
+const clef = trebleClef.entity
+clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
+clef.addComponent(
+    new utils.TriggerComponent(
+        new utils.TriggerBoxShape(
+            new Vector3(2, 5, 2)
+        ),
+        {
+            onCameraEnter: () => {
+                sequencer.stopSounds()
+                engine.removeEntity(capsule.entity)
+                movePlayerTo(playerPosition).catch((error) => log(error))
+            }
+        }
+    )
+)

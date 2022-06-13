@@ -81,6 +81,11 @@
             "gltfPath": "models/poap/poap_dispenser/POAP_dispenser.glb"
         },
         {
+            "name": "box",
+            "id": "f4b034c1-e086-480d-8aea-b7a5b7ec3289",
+            "gltfPath": ".idea/shelf/Uncommitted_changes_before_Update_at_12_06_2022_19_41_[Changes]/box.glb"
+        },
+        {
             "name": "capsule",
             "id": "509b0584-b940-41e7-8911-d9ae0d24dc81",
             "gltfPath": "models/capsule/capsule.glb"

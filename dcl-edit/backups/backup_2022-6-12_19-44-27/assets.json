@@ -71,19 +71,14 @@
             "gltfPath": "models/robots/npc.glb"
         },
         {
-            "name": "POAP button",
-            "id": "5e892075-ec38-464a-9319-70af5cb5e735",
-            "gltfPath": "models/poap/poap_button/POAP_button.glb"
-        },
-        {
             "name": "POAP dispenser",
-            "id": "ef8b4624-0b7c-4092-924a-b911d727f8cd",
-            "gltfPath": "models/poap/poap_dispenser/POAP_dispenser.glb"
+            "id": "ed041576-38e9-40a2-8b46-bcf27a87fd12",
+            "gltfPath": "models/poap_dispenser/POAP_dispenser.glb"
         },
         {
-            "name": "capsule",
-            "id": "509b0584-b940-41e7-8911-d9ae0d24dc81",
-            "gltfPath": "models/capsule/capsule.glb"
+            "name": "POAP button",
+            "id": "2c489bf9-4500-4e4a-9c89-d2f8e12ee4f8",
+            "gltfPath": "models/poap_button/POAP_button.glb"
         }
     ]
 }

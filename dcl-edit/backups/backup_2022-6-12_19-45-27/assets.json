@@ -71,6 +71,26 @@
             "gltfPath": "models/robots/npc.glb"
         },
         {
+            "name": "POAP dispenser",
+            "id": "ed041576-38e9-40a2-8b46-bcf27a87fd12",
+            "gltfPath": "models/poap_dispenser/POAP_dispenser.glb"
+        },
+        {
+            "name": "POAP button",
+            "id": "2c489bf9-4500-4e4a-9c89-d2f8e12ee4f8",
+            "gltfPath": "models/poap_button/POAP_button.glb"
+        },
+        {
+            "name": "box",
+            "id": "c628b35e-5cc3-46c1-8785-06fccf8475a7",
+            "gltfPath": ".idea/shelf/Uncommitted_changes_before_Update_at_12_06_2022_19_41_[Changes]/box.glb"
+        },
+        {
+            "name": "box",
+            "id": "da459535-67da-4ee9-9555-de16f602b4ae",
+            "gltfPath": "models/box.glb"
+        },
+        {
             "name": "POAP button",
             "id": "5e892075-ec38-464a-9319-70af5cb5e735",
             "gltfPath": "models/poap/poap_button/POAP_button.glb"
@@ -79,11 +99,6 @@
             "name": "POAP dispenser",
             "id": "ef8b4624-0b7c-4092-924a-b911d727f8cd",
             "gltfPath": "models/poap/poap_dispenser/POAP_dispenser.glb"
-        },
-        {
-            "name": "capsule",
-            "id": "509b0584-b940-41e7-8911-d9ae0d24dc81",
-            "gltfPath": "models/capsule/capsule.glb"
         }
     ]
 }
