@@ -92,7 +92,7 @@ Platforms.createMovingPlatform(
 Platforms.createMovingPlatform(
     scene.platformBlue4.entity,
     scene.platformBlue4.transform.position,
-    scene.platformBlue4.transform.position.add(new Vector3(0, 0, -5)),
+    scene.platformBlue4.transform.position.add(new Vector3(0, 0, -7)),
     4
 )
 
@@ -107,7 +107,7 @@ Platforms.createMovingPlatform(
     scene.platformBlue6.entity,
     scene.platformBlue6.transform.position,
     scene.platformBlue6.transform.position.add(new Vector3(4)),
-    5
+    7
 )
 
 Platforms.createMovingPlatform(
@@ -130,8 +130,7 @@ platforms.forEach(platform => {
             ),
             {
                 onCameraEnter: () => {
-                    entity.removeComponent(GLTFShape)
-                    entity.addComponent(new GLTFShape(resources.models.platform_yellow))
+                    entity.addComponentOrReplace(new GLTFShape(resources.models.platform_yellow))
                     entity.getComponent(AudioSource).playing = true
                     entity.addComponent(
                         new utils.Delay(500, () => {
