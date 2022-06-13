@@ -1,14 +1,14 @@
 {
   "display": {
-    "title": "DCL Scene",
-    "description": "My new Decentraland project",
+    "title": "dcl scene",
+    "description": "Inception Team project for Decentraland Game Jam 2022",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
   },
-  "owner": "",
+  "owner": "Inception Team",
   "contact": {
-    "name": "author-name",
-    "email": ""
+    "name": "Andrey Chaporov",
+    "email": "chaporovag@gmail.com"
   },
   "main": "bin/game.js",
   "tags": [],
@@ -34,6 +34,9 @@
       }
     }
   ],
-  "requiredPermissions": [],
+  "requiredPermissions": [
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+  ],
   "featureToggles": {}
 }
