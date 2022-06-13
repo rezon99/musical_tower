@@ -1,6 +1,6 @@
 export default {
 	models: {
-		npc: 'models/robots/npc.glb',
+		npc: 'models/npc/npc.glb',
 		platform_yellow: 'models/platform_yellow/platform_yellow.glb'
 	},
 	textures: {
