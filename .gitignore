@@ -4,4 +4,5 @@ npm-debug.log
 .DS_Store
 /*.env
 bin
+dcl-edit/backups
 package-lock.json
