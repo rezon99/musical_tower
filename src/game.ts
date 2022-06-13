@@ -25,6 +25,10 @@ const {
     platformBlue7,
 } = scene
 
+const notes = [
+    note1, note2, note3
+]
+
 const platforms = [
     { entity: platformBlue1.entity, clip: resources.audio.sequencer.s1 },
     { entity: platformBlue2.entity, clip: resources.audio.sequencer.s2 },
@@ -35,11 +39,7 @@ const platforms = [
     { entity: platformBlue7.entity, clip: resources.audio.sequencer.s7 },
 ]
 
-const notes = [
-    note1, note2, note3
-]
-
-const routines: PredefinedEmote[] = [
+const emotions: PredefinedEmote[] = [
     PredefinedEmote.ROBOT,
     PredefinedEmote.TIK,
     PredefinedEmote.TEKTONIK,
@@ -96,11 +96,16 @@ Platforms.createMovingPlatform(
     4
 )
 
-Platforms.createMovingPlatform(
+Platforms.createPathedPlatform(
     scene.platformBlue5.entity,
-    scene.platformBlue5.transform.position,
-    scene.platformBlue5.transform.position.add(new Vector3(5)),
-    3
+    [
+        scene.platformBlue5.transform.position.add(new Vector3(3)),
+        scene.platformBlue5.transform.position.add(new Vector3(10)),
+        scene.platformBlue5.transform.position.add(new Vector3(10, 0, -10)),
+        scene.platformBlue5.transform.position.add(new Vector3(10)),
+        scene.platformBlue5.transform.position.add(new Vector3(3))
+    ],
+    10
 )
 
 Platforms.createMovingPlatform(
@@ -117,7 +122,11 @@ Platforms.createMovingPlatform(
     4
 )
 
-notes.forEach(note => note.entity.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0))))
+notes.forEach(note => {
+    note.entity.addComponent(
+        new utils.KeepRotatingComponent(Quaternion.Euler(0, Utils.getRandom(100, 250), 0))
+    )
+})
 
 platforms.forEach(platform => {
     const entity = platform.entity
@@ -134,7 +143,7 @@ platforms.forEach(platform => {
                     entity.getComponent(AudioSource).playing = true
                     entity.addComponent(
                         new utils.Delay(500, () => {
-                            triggerEmote({ predefined: routines[Utils.getRandom(0, routines.length - 1)] })
+                            triggerEmote({ predefined: emotions[Utils.getRandom(0, emotions.length - 1)] })
                         })
                     )
                     sequencer.addClip(platform.clip)
@@ -146,7 +155,7 @@ platforms.forEach(platform => {
 
 
 const clef = trebleClef.entity
-clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 255, 0)))
+clef.addComponent(new utils.KeepRotatingComponent(Quaternion.Euler(0, 250, 0)))
 clef.addComponent(
     new utils.TriggerComponent(
         new utils.TriggerBoxShape(
