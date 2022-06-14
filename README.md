@@ -27,7 +27,7 @@ Depending on which route the player chooses, the final mix may sound different.
     <strong>Enjoy your mix and don't forget to grab the POAP</strong>
 </p>
 
-## 👀 Overview
+## 🔎 Overview
 <p align="center">
     <img src="screenshots/preview.gif" width="600"><br>
     <strong>Game fast look</strong>
@@ -38,7 +38,7 @@ Depending on which route the player chooses, the final mix may sound different.
     <strong>Level builder using DCL Editor</strong>
 </p>
 
-## ✔️ Try it out
+## 🎮 Try it out
 **Requirements**
 
 node version: >=16.0.0
@@ -75,6 +75,16 @@ Start the editor running this command
 dcl-edit
 ```
 
+## 🏆 Claiming POAP
+After complete the game, you'll be able to obtain the POAP.
+
+In local build or build hosted on Heroku, it is required to fill up the google form with email. The link for POAP's minting page will be sent to you very soon.
+
+For Decentraland build it's required to replace eventUUID variable in resources file with following: 
+```bash
+eventUUID: 'a8b9a696-6244-4cae-99ef-fa34d368accd'
+```
+
 ## 🙏 Acknowledgements
 **Many thanks to DCL-Edit developers team!**
 
@@ -95,7 +105,7 @@ This improvement could help to develop several scenes for the game at the moment
 
 - Turn on/off autosave of the editor scene.
 
-## 📄 More
+## 🚩 More info
 
 - Scene playground on Heroku: https://music-tower-dcl.herokuapp.com/
 - Game walkthrough: https://www.youtube.com/watch?v=KwyeCm8jc_o

@@ -57,10 +57,10 @@ export function createDispenser(
       (_e) => {
         button.getComponent(Animator).getClip('Button_Action').play()
         //sceneMessageBus.emit('activatePoap', {})
-        if (externalURL) {
-          openExternalURL(externalURL)
-        } else {
+        if (eventUUID) {
           void makeTransaction()
+        } else if (externalURL) {
+          openExternalURL(externalURL)
         }
       },
       { hoverText: 'Get Attendance Token' }
