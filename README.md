@@ -1,10 +1,7 @@
 <br />
-<p align="center">
-<a >
-    <img src="screenshots/thumbnail.jpg" alt="Logo">
-</a>
 
-<h3 align="center">Musical game developed for Decentraland Game Jam 2022<br /><br />[ by Inception Team ]</h3>
+
+<h3 align="center">Musical game developed for Decentraland<br /><br />[ by Inception Team ]</h3>
 
 <p align="center">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/inceptionfun?style=social" />  
