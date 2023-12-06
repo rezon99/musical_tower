@@ -51,67 +51,18 @@ npm version: >=8.0.0
 npm install -g decentraland
 ```
 
-**Install the DCL-Edit**
-
-Install awesome DCL Editor to be able to change the level as you want 
-
-```bash
-npm npm install -g dcl-edit
-```
 
 **Then install dependencies**
 ```bash
 npm install
-```
-**Previewing the scene**
 
-Run scene locally
-```bash
-dcl start
 ```
 
-Start the editor running this command
-```bash
-dcl-edit
-```
-
-## 🏆 Claiming POAP
-After complete the game, you'll be able to obtain the POAP.
-
-In local build or build hosted on Heroku, it is required to fill up the google form with email. The link for POAP's minting page will be sent to you very soon.
-
-For Decentraland build it's required to replace eventUUID variable in resources file with following: 
-```bash
-eventUUID: 'a8b9a696-6244-4cae-99ef-fa34d368accd'
-```
-
-## 🙏 Acknowledgements
-**Many thanks to DCL-Edit developers team!**
-
-This game development was focused on using brand-new DCL-Edit product.
-
-This solution helps to build and edit scene for Decentraland very fast.
-
-Changes to a scene have immediate effect and can be tested right away and this is awesome!
-
-With the help of DCL edit, the scene can be rebuilt very quickly, which makes it easily customizable and reusable.
-
-**Wishes for future releases:**
-
-- It would be great to add opportunity for multi-scenes development at DCL editor in future releases.
-This improvement could help to develop several scenes for the game at the moment.
-
-- For UI would be useful a change history view tab. 
-
-- Turn on/off autosave of the editor scene.
 
 ## 🚩 More info
 
-- Scene playground on Heroku: https://music-tower-dcl.herokuapp.com/
+- Scene playground: https://play.decentraland.org/?realm=rezon.dcl.eth&position=0%2C0
 - Game walkthrough: https://www.youtube.com/watch?v=KwyeCm8jc_o
-- About Game Jam: https://decentraland.org/blog/announcements/the-2022-decentraland-game-jam-is-here/
-- DCL-Edit: https://dcl-edit.com/
-- POAP event: https://poap.gallery/event/49435
 
 
 ## 📑 License
