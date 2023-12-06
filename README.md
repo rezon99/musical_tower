@@ -19,10 +19,7 @@ After going through all the floors and climbing onto the top, the player enjoys 
 
 Depending on which route the player chooses, the final mix may sound different.
 
-<p align="center">
-    <img src="screenshots/poap.gif" width="300"><br>
-    <strong>Enjoy your mix and don't forget to grab the POAP</strong>
-</p>
+
 
 ## 🔎 Overview
 <p align="center">
